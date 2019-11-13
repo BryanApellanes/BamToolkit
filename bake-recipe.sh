@@ -19,6 +19,6 @@ echo building bake from $SRCROOT
 ./build-bake.sh $SRCROOT
 
 echo baking `pwd`/recipes/$RUNTIME-toolkit-recipe.json
-~/.bam/bake/bake /recipe:./recipes/$RUNTIME-toolkit-recipe.json
+~/.bam/bake/bake /recipe:./recipes/$RUNTIME-toolkit.json
 
 fi
