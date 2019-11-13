@@ -1,0 +1,23 @@
+{
+  "NameIsDefault": false,
+  "Name": "osx-x64-toolkit-recipe",
+  "ProjectRoot": "./Bam.Net.Core/_tools/",
+  "ProjectFilePaths": [
+    "/Users/bapellanes/src/BamFrameworkCore/BamToolkit/Bam.Net.Core/_tools/bamsdo/bamsdo.csproj",
+    "/Users/bapellanes/src/BamFrameworkCore/BamToolkit/Bam.Net.Core/_tools/bamtest/bamtest.csproj",
+    "/Users/bapellanes/src/BamFrameworkCore/BamToolkit/Bam.Net.Core/_tools/bamd/bamd.csproj",
+    "/Users/bapellanes/src/BamFrameworkCore/BamToolkit/Bam.Net.Core/_tools/bam/bam.csproj",
+    "/Users/bapellanes/src/BamFrameworkCore/BamToolkit/Bam.Net.Core/_tools/badns/badns.csproj",
+    "/Users/bapellanes/src/BamFrameworkCore/BamToolkit/Bam.Net.Core/_tools/breve/breve.csproj",
+    "/Users/bapellanes/src/BamFrameworkCore/BamToolkit/Bam.Net.Core/_tools/bamweb/bamweb.csproj",
+    "/Users/bapellanes/src/BamFrameworkCore/BamToolkit/Bam.Net.Core/_tools/laotze/laotze.csproj",
+    "/Users/bapellanes/src/BamFrameworkCore/BamToolkit/Bam.Net.Core/_tools/bamdb/bamdb.csproj",
+    "/Users/bapellanes/src/BamFrameworkCore/BamToolkit/Bam.Net.Core/_tools/bake/bake.csproj",
+    "/Users/bapellanes/src/BamFrameworkCore/BamToolkit/Bam.Net.Core/_tools/masuco/masuco.csproj",
+    "/Users/bapellanes/src/BamFrameworkCore/BamToolkit/Bam.Net.Core/_tools/bamrpc/bamrpc.csproj"
+  ],
+  "OutputDirectory": "./build/bin",
+  "NugetOutputDirectory": "/Users/bapellanes/.bam/nupkg/OSX",
+  "BuildConfig": "Debug",
+  "OsName": "OSX"
+}

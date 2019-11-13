@@ -1,0 +1,3 @@
+[submodule "Bam.Net.Core"]
+	path = Bam.Net.Core
+	url = https://github.com/BryanApellanes/Bam.Net.Core.git
