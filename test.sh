@@ -1,10 +1,8 @@
 #!/bin/bash
 
-
-if [[ -f "LICENSE" ]]
-    then echo "LICENSE exists"
-fi
-
-if [[ -f "monkey" ]]
-    then echo "monkey doesn't exist"
+if [[ $_ != $0 ]]
+    then
+        echo "yes"
+else
+    echo "no"
 fi

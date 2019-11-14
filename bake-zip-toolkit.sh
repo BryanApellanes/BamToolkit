@@ -5,6 +5,6 @@ source ./get-os-runtime.sh
 
 ./build-bake.sh
 
-OUTPUT=./build/bin
+OUTPUT=./dist/bin
 printf "OUTPUT = $OUTPUT\r\n"
-~/.bam/bake/bake /zip /zipRecipe:./recipes/$RUNTIME-toolkit-recipe.json /output:$OUTPUT
+~/.bam/bake/bake /zip /zipRecipe:./recipes/$RUNTIME-bamtoolkit.json /output:$OUTPUT

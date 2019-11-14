@@ -20,6 +20,6 @@ OUTPUTRECIPES=./recipes/
 rm -fr ~/.bam/tmp/bake
 dotnet publish $SRCROOT/_tools/bake/bake.csproj -c Release -r $RUNTIME -o ~/.bam/tmp/bake
 
-~/.bam/tmp/bake/bake /discover:$SRCROOT/_tools/ /output:./build/bin /outputRecipe:$OUTPUTRECIPES$RUNTIME-toolkit.json
+~/.bam/tmp/bake/bake /discover:$SRCROOT/_tools/ /output:./dist/bin /outputRecipe:$OUTPUTRECIPES$RUNTIME-bamtoolkit.json
 
 fi

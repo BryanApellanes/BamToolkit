@@ -18,7 +18,7 @@ source ./get-os-runtime.sh
 echo building bake from $SRCROOT
 ./build-bake.sh $SRCROOT
 
-echo baking `pwd`/recipes/$RUNTIME-toolkit-recipe.json
-~/.bam/bake/bake /recipe:./recipes/$RUNTIME-toolkit.json
+echo baking `pwd`/recipes/$RUNTIME-toolkit.json
+~/.bam/bake/bake /recipe:./recipes/$RUNTIME-bamtoolkit.json
 
 fi
