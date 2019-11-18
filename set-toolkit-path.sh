@@ -2,7 +2,7 @@
 
 if [[ $1 = "-help" ]] || [[ $1 = "-?" ]] || [[ $1 = "-h" ]]
 then
-    printf "usage: set-toollkit-path.sh [BamToolkitDirectory]\r\n"
+    printf "usage: set-toolkit-path.sh [BamToolkitDirectory]\r\n"
     printf "\r\n"
     printf "Add the specified directory (or the default if no directory is specified) to the environment path variable.\r\n"
     printf "The default BamToolkitDirectory is '~/.bam/toolkit/bin'.\r\n"
