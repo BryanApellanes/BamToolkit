@@ -44,7 +44,9 @@ fi
 
 chmod 755 $DESTINATION/*
 
-source ./set-toolkit-path.sh $DESTINATION
+if [[ $SETPATH -ne false ]]; then
+    source ./set-toolkit-path.sh $DESTINATION
+fi
 
 export PATH
 
