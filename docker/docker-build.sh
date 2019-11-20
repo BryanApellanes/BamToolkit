@@ -8,6 +8,6 @@ if [[ -z "$1" ]] || [[ $1 = "-help" ]] || [[ $1 = "-?" ]] || [[ $1 = "-h" ]]; th
     exit 0
 else
 
-docker build -t $1 .
+docker build -t $1 . 
 
 fi
