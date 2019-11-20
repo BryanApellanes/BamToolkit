@@ -22,6 +22,7 @@ ENV DIST=/tmp/bam
 ENV SETPATH=false
 RUN ./setup.sh
 
+WORKDIR /root 
 RUN rm -fr /root/.bam/src
 
 # Runtime
@@ -33,9 +34,7 @@ RUN apt-get update \
 
 WORKDIR /root
 
-COPY --from=build-env /root/.bam ./
+COPY --from=build-env /root/.bam ./.bam
 
 ENV ASPNETCORE_ENVIRONMENT=PROD
 ENV PATH "$PATH:/root/.bam/toolkit/bin"
-ENTRYPOINT [ "bamweb", "/S", "/content:/root/.bam/content", "/verbose"]
-
