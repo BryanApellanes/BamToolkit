@@ -12,9 +12,7 @@ else
 if [[ $_ != $0 ]]
     then        
         ./build.sh
-        source ./install.sh
-
-        export PATH
+        ./install.sh
 else
     printf "Please source this file to ensure your PATH variable is properly updated.\r\n\r\n"
 fi
