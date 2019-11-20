@@ -19,8 +19,7 @@ RUN mv ./_ssh/ ./.ssh \
 WORKDIR /root/.bam/src/BamToolkit
 
 ENV DIST=/tmp/bam
-ENV SETPATH=false
-RUN ./setup.sh
+RUN ./build-tool.sh bamweb
 
 WORKDIR /root 
 RUN rm -fr /root/.bam/src
