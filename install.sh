@@ -44,12 +44,6 @@ fi
 
 chmod 755 $DESTINATION/*
 
-if [[ $SETPATH -ne false ]]; then
-    source ./set-toolkit-path.sh $DESTINATION
-fi
-
-export PATH
-
 printf "Installed the BamToolkit to $DESTINATION\r\n\r\n"
 
 # //closer for help
