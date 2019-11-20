@@ -19,10 +19,10 @@ RUN mv ./_ssh/ ./.ssh \
 WORKDIR /root/.bam/src/BamToolkit
 
 ENV DIST=/tmp/bam
-RUN ./build-tool.sh bamweb
+ENV SETPATH=false
+RUN ./setup.sh
 
 WORKDIR /root 
-RUN rm -fr /root/.bam/src
 
 ENV ASPNETCORE_ENVIRONMENT=PROD
 ENV PATH "$PATH:/root/.bam/toolkit/bin"
