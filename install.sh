@@ -35,7 +35,7 @@ source ./get-os-runtime.sh
 
 if [[ ! -f $DIST/$RUNTIME-bamtoolkit.zip  ]]
     then 
-        printf "$RUNTIME-bamtoolkit.zip not found, run build.sh first.\r\n"
+        printf "$DIST/$RUNTIME-bamtoolkit.zip not found, run build.sh first.\r\n"
         exit 1
 else
     mkdir -p $DESTINATION
