@@ -11,8 +11,6 @@ WORKDIR /root
 
 COPY . ./
 
-RUN ./install-nodejs.sh
-
 RUN mv ./_ssh/ ./.ssh \
     && git clone https://github.com/BryanApellanes/BamToolkit.git ./.bam/src/BamToolkit
 
@@ -24,5 +22,20 @@ RUN ./build-tool.sh bamweb
 WORKDIR /root 
 RUN rm -fr /root/.bam/src
 
+# Build runtime image
+FROM microsoft/dotnet:aspnetcore-runtime
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends git-core curl build-essential openssl libssl-dev unzip \
+    && rm -rf /var/lib/apt/lists/* 
+
+WORKDIR /root
+
+COPY . ./
+RUN ./install-nodejs.sh
+
+COPY --from=build-env /root/.bam ./.bam
 ENV ASPNETCORE_ENVIRONMENT=PROD
-ENV PATH "$PATH:/root/.bam/toolkit/bin"
+ENV PATH "$PATH:/root/.bam/toolkit/ubuntu.16.10-x64/bamweb"
+ENTRYPOINT ["bamweb", "/S", "/content:/opt/bam/content", "/verbose"]
+
