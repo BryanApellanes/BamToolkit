@@ -37,5 +37,4 @@ RUN ./install-nodejs.sh
 COPY --from=build-env /root/.bam ./.bam
 ENV ASPNETCORE_ENVIRONMENT=PROD
 ENV PATH "$PATH:/root/.bam/toolkit/ubuntu.16.10-x64/bamweb"
-ENTRYPOINT ["bamweb", "/S", "/content:/opt/bam/content", "/verbose"]
 

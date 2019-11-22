@@ -8,6 +8,13 @@ if [[ -z "$1" ]] || [[ $1 = "-help" ]] || [[ $1 = "-?" ]] || [[ $1 = "-h" ]]; th
     exit 0
 else
 
-docker build -t $1 . 
+TAG=$1
+FILE=Dockerfile
+
+if [[ $# -eq 2 ]]; then
+    FILE=$2
+fi
+
+docker build -t $TAG . -f $FILE
 
 fi

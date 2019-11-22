@@ -24,3 +24,4 @@ RUN ./build-tool.sh bamweb
 WORKDIR /root 
 
 ENV ASPNETCORE_ENVIRONMENT=PROD
+ENV PATH "$PATH:/root/.bam/toolkit/ubuntu.16.10-x64/bamweb"
