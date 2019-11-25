@@ -15,6 +15,8 @@ source ./get-os-runtime.sh
 
 ./bake-discover-recipe.sh
 ./bake-recipe.sh 
-./bake-zip-toolkit.sh
+source ./bake-zip-toolkit.sh
 
+echo from build ${DIST}
+export DIST
 fi

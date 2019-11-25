@@ -11,7 +11,8 @@ else
 
 if [[ $_ != $0 ]]
     then        
-        ./build.sh
+        source ./build.sh
+        echo ${DIST}
         ./install.sh
 else
     printf "Please source this file to ensure your PATH variable is properly updated.\r\n\r\n"
