@@ -2,24 +2,39 @@
 
 
 if [[ -z "$1" ]] || [[ $1 = "-help" ]] || [[ $1 = "-?" ]] || [[ $1 = "-h" ]]; then
-    printf "usage: docker-run.sh <image-name> <innerport>:<outerport>\r\n"
+    printf "usage: docker-run.sh <image-name> <image-id> <innerport>:<outerport>\r\n"
     printf "\r\n"
     printf "Using docker, starts a bash prompt in the specified container to explore and debug its content.\r\n"
     printf "\r\n"
     exit 0
 else
 
-PORTS=8080:80
+SUFFIX=`date | md5`
+
+NAME=$1
+IMAGE=$2
+PORTS=$3
+
+if [[ -z "$1" ]]
+    then
+        printf "Please specify a name for the container.\r\n\r\n"
+        exit 1
+fi 
 
 if [[ -z "$2" ]]
     then
-        PORTS=$2
+        printf "Please specify the image id to run.\r\n\r\n"
+        exit 1
 fi
 
-SUFFIX=`date | md5`
+if [[ -z "$3" ]]
+    then
+        PORTS=8080:8080
+else
+    PORTS=$3
+fi
 
-IMAGE=$1
 
-docker run -d -p $PORTS --name $IMAGE-$SUFFIX $IMAGE
+docker run -d -p $PORTS --name $NAME-$SUFFIX $IMAGE
 
 fi
