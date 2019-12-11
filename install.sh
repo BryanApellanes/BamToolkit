@@ -10,8 +10,8 @@ then
     printf "~/.bam/toolkit/bin is used.\r\n"
     printf ""
     printf "\r\n"
-
-else
+    exit 0
+fi
 
 if [[ -z "$DIST" ]]; then
     DIST=./dist
@@ -40,11 +40,9 @@ if [[ ! -f $DIST/$RUNTIME-bamtoolkit.zip  ]]
 else
     mkdir -p $DESTINATION
     unzip $DIST/$RUNTIME-bamtoolkit.zip -d $DESTINATION
+    source ./set-toolkit-path.sh $DESTINATION
 fi
 
 chmod 755 $DESTINATION/*
 
 printf "Installed the BamToolkit to $DESTINATION\r\n\r\n"
-
-# //closer for help
-fi
