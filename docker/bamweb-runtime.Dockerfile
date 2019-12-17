@@ -2,7 +2,7 @@
 FROM microsoft/dotnet:sdk AS build-env
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends git-core curl build-essential openssl libssl-dev unzip python3 \
+    && apt-get install -y --no-install-recommends git-core curl build-essential openssl libssl-dev unzip \
     && rm -rf /var/lib/apt/lists/* 
 
 RUN mkdir -p /root/.bam/src
@@ -26,8 +26,10 @@ RUN rm -fr /root/.bam/src
 FROM microsoft/dotnet:aspnetcore-runtime
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends git-core curl build-essential openssl libssl-dev unzip \
+    && apt-get install -y --no-install-recommends git-core curl build-essential openssl libssl-dev unzip python3 \
     && rm -rf /var/lib/apt/lists/* 
+
+RUN ln -s /usr/bin/python3 /usr/bin/python
 
 WORKDIR /root
 

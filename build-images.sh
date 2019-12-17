@@ -1,5 +1,13 @@
 #!/bin/bash
 
+if [[ $1 = "-help" ]] || [[ $1 = "-?" ]] || [[ $1 = "-h" ]]; then
+    printf "usage: build-images.sh\r\n"
+    printf "\r\n"
+    printf "Build the bamweb-runtime and bamweb-sdk docker images.\r\n"
+    printf "\r\n"
+    exit 0
+fi
+
 cd docker
 
 ./docker-build.sh bamweb-runtime bamweb-runtime.Dockerfile
