@@ -8,7 +8,4 @@ source ./get-os-runtime.sh
 mkdir -p /tmp/bam/bin
 OUTPUT=/tmp/bam/bin
 printf "OUTPUT = $OUTPUT\r\n"
-~/.bam/bake/bake /zip /zipRecipe:./recipes/$RUNTIME-bamtoolkit.json /output:${OUTPUT}
-
-DIST=/tmp/bam
-export DIST
+~/.bam/bake/bake /zip /zipRecipe:./recipes/${RUNTIME}-bamtoolkit.json /output:${OUTPUT}

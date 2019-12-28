@@ -17,4 +17,4 @@ if [[ "$OSTYPE" == "freebsd"* ]]
 fi
 
 export RUNTIME
-echo 'RUNTIME is' $RUNTIME
+echo 'RUNTIME is' ${RUNTIME}
