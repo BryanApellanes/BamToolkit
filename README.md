@@ -9,7 +9,7 @@ source setup.sh
 
 ## Quick Start
 
-Source the `setup.sh` by calling `source setup.sh` script.  This will do the following:
+Source the `setup.sh` by calling `source setup.sh`.  This will do the following:
 
     - Build the toolkit from source
     - Install the resulting binaries into ~/.bam/toolkit/bin
