@@ -1,11 +1,10 @@
 #!/bin/bash
 
-if [[ $1 = "-help" ]] || [[ $1 = "-?" ]] || [[ $1 = "-h" ]] || [[ $2 = "-help" ]] || [[ $2 = "-?" ]] || [[ $2 = "-h" ]]
-then
+if [[ $1 = "-help" ]] || [[ $1 = "-?" ]] || [[ $1 = "-h" ]] || [[ $2 = "-help" ]] || [[ $2 = "-?" ]] || [[ $2 = "-h" ]]; then
     printf "usage: install.sh [destination-directory]\r\n"
     printf "\r\n"
     printf "Using the zip file for the current os in the DIST folder ($DIST) or the default of (./dist) if the"
-    printf "environment variable is not set.\r\n"
+    printf "DIST environment variable is not set.\r\n"
     printf "Installs the BamToolkit to the specified directory; if no directory is specified the default\r\n"
     printf "~/.bam/toolkit/bin is used.\r\n"
     printf ""
@@ -38,9 +37,9 @@ if [[ ! -f ${DIST}/${RUNTIME}-bamtoolkit.zip  ]]
         printf "$DIST/$RUNTIME-bamtoolkit.zip not found, run build.sh first.\r\n"
         exit 1
 else
-    mkdir -p $DESTINATION
-    unzip $DIST/$RUNTIME-bamtoolkit.zip -d $DESTINATION
-    source ./set-toolkit-path.sh $DESTINATION
+    mkdir -p ${DESTINATION}
+    unzip ${DIST}/${RUNTIME}-bamtoolkit.zip -d ${DESTINATION}
+    source ./set-toolkit-path.sh ${DESTINATION}
 fi
 
 chmod 755 ${DESTINATION}/*
