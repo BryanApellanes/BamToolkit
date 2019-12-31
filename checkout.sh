@@ -19,6 +19,7 @@ else
   BAMNETVERSION=$1
 fi
 
+echo "setting src root\r\n"
 source ./set-src-root.sh
 
 echo ***** ${BAMNETVERSION}
