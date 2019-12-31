@@ -10,8 +10,9 @@ if [[ $1 = "-help" ]] || [[ $1 = "-?" ]] || [[ $1 = "-h" ]]; then
 fi
 
 if [[ !(-z $1) ]]; then
+    printf "Specified SRCROOT $1"
     if [[ !(-d $1) ]]; then
-        printf "The specified directory doesn't exist: $1"
+        printf "The specified directory doesn't exist: $1\r\n"
         exit 1
     else
         SRCROOT=$1
