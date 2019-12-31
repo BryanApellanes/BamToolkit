@@ -1,7 +1,6 @@
 #!/bin/bash
 
-if [[ $1 = "-help" ]] || [[ $1 = "-?" ]] || [[ $1 = "-h" ]] || [[ $2 = "-help" ]] || [[ $2 = "-?" ]] || [[ $2 = "-h" ]]
-then
+if [[ $1 = "-help" ]] || [[ $1 = "-?" ]] || [[ $1 = "-h" ]] || [[ $2 = "-help" ]] || [[ $2 = "-?" ]] || [[ $2 = "-h" ]]; then
     printf "usage: install.sh [destination-directory]\r\n"
     printf "\r\n"
     printf "Using the zip file for the current os in the DIST folder ($DIST) or the default of (./dist) if the"
@@ -17,32 +16,28 @@ if [[ -z "$DIST" ]]; then
     DIST=./dist
 fi
 
-DESTINATION=$1
+BAMTOOLKITBIN=$1
 
-if [[ -d ${DESTINATION} ]]
-    then
-        printf "\r\nThe specified output directory already exists, please move or delete the folder $DESTINATION.\r\n\r\n"
+if [[ -d ${BAMTOOLKITBIN} ]]; then
+        printf "\r\nThe specified output directory already exists, please move or delete the folder $BAMTOOLKITBIN.\r\n\r\n"
         exit 1
 fi
 
-if [[ -z "$1" ]]
-    then
-        DESTINATION=~/.bam/toolkit/bin
-        rm -fr ${DESTINATION}
+if [[ -z "$1" ]]; then
+        BAMTOOLKITBIN=~/.bam/toolkit/bin
+        rm -fr ${BAMTOOLKITBIN}
 fi
 
 source ./get-os-runtime.sh 
 
-if [[ ! -f ${DIST}/${RUNTIME}-bamtoolkit.zip  ]]
-    then 
+if [[ ! -f ${DIST}/${RUNTIME}-bamtoolkit.zip  ]]; then 
         printf "$DIST/$RUNTIME-bamtoolkit.zip not found, run build.sh first.\r\n"
         exit 1
 else
-    mkdir -p $DESTINATION
-    unzip $DIST/$RUNTIME-bamtoolkit.zip -d $DESTINATION
-    source ./set-toolkit-path.sh $DESTINATION
+    mkdir -p $BAMTOOLKITBIN
+    unzip $DIST/$RUNTIME-bamtoolkit.zip -d $BAMTOOLKITBIN
+    source ./set-toolkit-path.sh $BAMTOOLKITBIN
 fi
 
-chmod 755 ${DESTINATION}/*
-
-printf "Installed the BamToolkit to $DESTINATION\r\n\r\n"
+export BAMTOOLKITBIN
+printf "Installed BamToolkit to $BAMTOOLKITBIN\r\n\r\n"

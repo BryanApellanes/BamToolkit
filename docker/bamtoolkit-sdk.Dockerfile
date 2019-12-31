@@ -5,8 +5,6 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends git-core curl build-essential openssl libssl-dev unzip python3 \
     && rm -rf /var/lib/apt/lists/* 
 
-RUN ln -s /usr/bin/python3 /usr/bin/python
-
 RUN mkdir -p /root/.bam/src
 
 WORKDIR /root 
@@ -21,9 +19,10 @@ RUN mv ./_ssh/ ./.ssh \
 WORKDIR /root/.bam/src/BamToolkit
 
 ENV DIST=/tmp/bam
-RUN ./build-tool.sh bamweb
+ENV BAMTOOLKITSYMLINKS=/root/.bam/toolkit/ubuntu.16.10-x64
+RUN ./source-setup.sh
 
 WORKDIR /root 
 
 ENV ASPNETCORE_ENVIRONMENT=PROD
-ENV PATH "$PATH:/root/.bam/toolkit/ubuntu.16.10-x64/bamweb"
+ENV PATH "$PATH:/root/.bam/toolkit/ubuntu.16.10-x64"

@@ -1,7 +1,6 @@
 #!/bin/bash
 
-if [[ $1 = "-help" ]] || [[ $1 = "-?" ]] || [[ $1 = "-h" ]]
-then
+if [[ $1 = "-help" ]] || [[ $1 = "-?" ]] || [[ $1 = "-h" ]]; then
     printf "usage: build.sh <version>\r\n"
     printf "\r\n"
     printf "Build the bam toolkit found at the root source directory specified in the file _srcroot or the default of `pwd`/Bam.Net.Core.\r\n"

@@ -16,7 +16,7 @@
     "/media/data/src/BamToolkit/Bam.Net.Core/_tools/breve/breve.csproj"
   ],
   "OutputDirectory": "/tmp/bam/bin",
-  "NugetOutputDirectory": "/home/bryan/.bam/nupkg/Linux",
+  "NugetOutputDirectory": "/root/.bam/nupkg/Linux",
   "BuildConfig": "Debug",
   "OsName": "Linux"
 }
