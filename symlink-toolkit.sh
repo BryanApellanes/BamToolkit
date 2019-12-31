@@ -10,7 +10,9 @@ if [[ -z $1 ]] || [[ $1 = "-help" ]] || [[ $1 = "-?" ]] || [[ $1 = "-h" ]]; then
     exit 0
 fi
 
-BAMTOOLKITSYMLINKS=$1 # where to put symlinks
+if [[ -z $BAMTOOLKITSYMLINKS ]]; then
+    BAMTOOLKITSYMLINKS=$1 # where to put symlinks
+fi
 
 if [[ -z $BAMTOOLKITBIN ]]; then
     BAMTOOLKITBIN=$2
