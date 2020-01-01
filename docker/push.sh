@@ -1,5 +1,14 @@
 #!/bin/bash
 
+
+if [[ -z "$1" ]] || [[ $1 = "-help" ]] || [[ $1 = "-?" ]] || [[ $1 = "-h" ]]; then
+    printf "usage: push.sh <image-name> [remote-registry-path]\r\n"
+    printf "\r\n"
+    printf "Tag the specified 'image-name' then push it to the specified remote registry or docker hub if no remote registry is specified.\r\n"
+    printf "\r\n"
+    exit 0
+fi
+
 IMAGE=$1
 REMOTEREGISTRY=docker.io/bamapps/$IMAGE
 

@@ -19,10 +19,11 @@ RUN mv ./_ssh/ ./.ssh \
 WORKDIR /root/.bam/src/BamToolkit
 
 ENV DIST=/tmp/bam
+ENV BAMTOOKKITBIN=/root/.bam/toolkit/bin
 ENV BAMTOOLKITSYMLINKS=/usr/local/bin
 RUN ./build.sh \
     && ./install.sh \
-    && ./symlink-toolkit.sh
+    && ./symlink-toolkit.sh /usr/local/bin /root/.bam/toolkit/bin
 
 WORKDIR /root 
 
