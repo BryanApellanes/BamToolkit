@@ -26,6 +26,24 @@ RUN ./build.sh \
     && ./symlink-toolkit.sh /usr/local/bin /root/.bam/toolkit/bin
 
 WORKDIR /root 
+RUN rm -fr /root/.bam/src
 
+# Build runtime image
+FROM microsoft/dotnet:aspnetcore-runtime
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends git-core curl build-essential openssl libssl-dev unzip python3 \
+    && rm -rf /var/lib/apt/lists/* 
+
+RUN ln -s /usr/bin/python3 /usr/bin/python
+
+WORKDIR /root
+
+COPY . ./
+RUN ./install-nodejs.sh
+
+COPY --from=build-env /root/.bam ./.bam
+COPY --from=build-env /usr/local/bin /usr/local/bin
 ENV ASPNETCORE_ENVIRONMENT=PROD
 ENV PATH "$PATH:/usr/local/bin"
+
