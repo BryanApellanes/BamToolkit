@@ -21,7 +21,7 @@ fi
 source ./set-src-root.sh
 source ./get-os-runtime.sh 
 
-./checkout.sh $BAMNETVERSION
+./checkout.sh
 
 ./bake-discover-recipe.sh
 ./bake-recipe.sh 
