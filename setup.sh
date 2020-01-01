@@ -33,4 +33,6 @@ if [[ $_ != $0 ]]
         source ./symlink-toolkit.sh ${BAMTOOLKITSYMLINKS}
 else
     printf "Please source this file to ensure your PATH variable is properly updated.\r\n\r\n"
+    printf "example:\r\n\tsource ./$0\r\n\r\n"
+
 fi
