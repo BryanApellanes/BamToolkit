@@ -23,6 +23,6 @@ source ./get-os-runtime.sh
 
 ./checkout.sh
 
-./bake-discover-tools-recipe.sh
-./bake-tools-recipe.sh 
-source ./bake-zip-toolkit.sh
+./bake-discover-lib-recipe.sh
+./bake-lib-recipe.sh 
+./bake-pack-nuget-lib.sh
