@@ -1,5 +1,14 @@
 #!/bin/bash
 
+if [[ $1 = "-help" ]] || [[ $1 = "-?" ]] || [[ $1 = "-h" ]]; then
+    printf "usage: bake-zip-toolkit.sh\r\n"
+    printf "\r\n"
+    printf "Uses 'bake' to zip the bam toolkit as specified in the recipe\r\n"
+    printf "./recipes/$RUNTIME-bamtoolkit.json.\r\n"
+    printf "\r\n"
+    exit 0
+fi
+
 source ./set-src-root.sh
 source ./get-os-runtime.sh
 

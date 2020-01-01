@@ -10,12 +10,12 @@ fi
 
 cd docker
 
-./docker-build.sh bamweb-runtime bamweb-runtime.Dockerfile
-./docker-build.sh bamweb-sdk bamweb-sdk.Dockerfile
-./docker-build.sh bamweb-runtime-aws bamweb-runtime.aws.Dockerfile
-./docker-build.sh bamweb-sdk-aws bamweb-sdk.aws.Dockerfile
+./build.sh bamweb-runtime bamweb-runtime.Dockerfile
+./build.sh bamweb-sdk bamweb-sdk.Dockerfile
+./build.sh bamweb-runtime-aws bamweb-runtime.aws.Dockerfile
+./build.sh bamweb-sdk-aws bamweb-sdk.aws.Dockerfile
 
-./docker-push.sh bamweb-runtime
-./docker-push.sh bamweb-sdk
-./docker-push.sh bamweb-runtime-aws
-./docker-push.sh bamweb-sdk-aws
+./push.sh bamweb-runtime
+./push.sh bamweb-sdk
+./push.sh bamweb-runtime-aws
+./push.sh bamweb-sdk-aws

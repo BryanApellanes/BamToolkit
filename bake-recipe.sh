@@ -7,7 +7,7 @@ then
     printf "\r\n"
     printf "First builds the 'bake' utility found at the specified root directory.\r\n"
     printf "Then uses 'bake' to build the bam toolkit as specified in the recipe\r\n"
-    printf "./recipes/$RUNTIME-toolkit-recipe.json.\r\n"
+    printf "./recipes/$RUNTIME-bamtoolkit.json.\r\n"
     printf "\r\n"
 
 else
@@ -18,7 +18,7 @@ source ./get-os-runtime.sh
 echo building bake from $SRCROOT
 ./build-bake.sh $SRCROOT
 
-echo baking `pwd`/recipes/$RUNTIME-toolkit.json
+echo baking `pwd`/recipes/$RUNTIME-bamtoolkit.json
 ~/.bam/bake/bake /recipe:./recipes/$RUNTIME-bamtoolkit.json
 
 fi
