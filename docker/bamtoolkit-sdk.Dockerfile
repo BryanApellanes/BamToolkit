@@ -19,10 +19,10 @@ RUN mv ./_ssh/ ./.ssh \
 WORKDIR /root/.bam/src/BamToolkit
 
 ENV DIST=/tmp/bam
-ENV BAMTOOLKITSYMLINKS=/root/.bam/toolkit/ubuntu.16.10-x64
+ENV BAMTOOLKITSYMLINKS=/root/.bam/toolkit
 RUN ./source-setup.sh
 
 WORKDIR /root 
 
 ENV ASPNETCORE_ENVIRONMENT=PROD
-ENV PATH "$PATH:/root/.bam/toolkit/ubuntu.16.10-x64"
+ENV PATH "$PATH:/root/.bam/toolkit"
