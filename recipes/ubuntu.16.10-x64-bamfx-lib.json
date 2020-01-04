@@ -8,7 +8,7 @@
     "/media/data/src/BamToolkit/Bam.Net.Core/_lib/adhoc/adhoc.csproj"
   ],
   "OutputDirectory": "/tmp/bam/fx",
-  "NugetOutputDirectory": "/home/bryan/.bam/nupkg/Linux",
+  "NugetOutputDirectory": "/root/.bam/nupkg/Linux",
   "BuildConfig": "Debug",
   "OsName": "Linux"
 }
