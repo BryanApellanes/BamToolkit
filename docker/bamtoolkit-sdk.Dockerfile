@@ -24,7 +24,7 @@ WORKDIR /root/.bam/src/BamToolkit
 ENV DIST=/tmp/bam
 ENV BAMTOOLKITBIN=/root/.bam/toolkit/bin
 ENV BAMTOOLKITSYMLINKS=/usr/local/bin
-RUN ./build.sh \
+RUN ./build-toolkit.sh \
     && ./install.sh \
     && ./symlink-toolkit.sh /usr/local/bin /root/.bam/toolkit/bin
 

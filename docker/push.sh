@@ -16,5 +16,7 @@ if [[ $# -eq 2 ]]; then
     REMOTEREGISTRY=$2
 fi
 
-docker tag $IMAGE $REMOTEREGISTRY
-docker push $REMOTEREGISTRY
+printf "Tagging docker image => 'docker tag ${IMAGE} ${REMOTEREGISTRY}'"
+docker tag ${IMAGE} ${REMOTEREGISTRY}
+printf "Pushing docker image => 'docker push ${REMOTEREGISTRY}'"
+docker push ${REMOTEREGISTRY}
