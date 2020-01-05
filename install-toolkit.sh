@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ $1 = "-help" ]] || [[ $1 = "-?" ]] || [[ $1 = "-h" ]] || [[ $2 = "-help" ]] || [[ $2 = "-?" ]] || [[ $2 = "-h" ]]; then
-    printf "usage: install.sh [destination-directory]\r\n"
+    printf "usage: install-toolkit.sh [destination-directory]\r\n"
     printf "\r\n"
     printf "Using the zip file for the current os in the DIST folder ($DIST) or the default of (./dist) if the"
     printf "DIST environment variable is not set.\r\n"
