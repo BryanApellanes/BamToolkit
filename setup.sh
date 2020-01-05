@@ -26,9 +26,9 @@ fi
 
 if [[ $_ != $0 ]]
     then        
-        source ./build.sh
+        source ./build-toolkit.sh
         echo "distribution folder is ${DIST}"
-        source ./install.sh
+        source ./install-toolkit.sh
         printf "installing symlinks to ${BAMTOOLKITSYMLINKS}"
         source ./symlink-toolkit.sh ${BAMTOOLKITSYMLINKS}
 else

@@ -15,7 +15,7 @@ RUN mv ./_ssh/ ./.ssh \
     && chmod 700 ./.ssh \
     && chmod 644 ./.ssh/id_rsa.pub \
     && chmod 600 ./.ssh/id_rsa \
-    && git clone https://github.com/BryanApellanes/BamToolkit.git ./.bam/src/BamToolkit
+    && git clone https://github.com/BryanApellanes/BamToolkit.git ./.bam/src/BamToolkit --recursive
 
 WORKDIR /root/.bam/src/BamToolkit
 
