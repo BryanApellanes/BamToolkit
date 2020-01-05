@@ -10,6 +10,9 @@ if [[ -z "$1" ]] || [[ $1 = "-help" ]] || [[ $1 = "-?" ]] || [[ $1 = "-h" ]]; th
     exit 0
 fi
 
+DOCKERBUILDNUM=$(<buildnum)
+echo $(($DOCKERBUILDNUM + 1)) > ./buildnum
+
 TAG=$1
 FILE=Dockerfile
 
