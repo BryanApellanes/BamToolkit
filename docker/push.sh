@@ -9,14 +9,18 @@ if [[ -z "$1" ]] || [[ $1 = "-help" ]] || [[ $1 = "-?" ]] || [[ $1 = "-h" ]]; th
     exit 0
 fi
 
-IMAGE=$1
-REMOTEREGISTRY=docker.io/bamapps/$IMAGE
+IMAGENAME=$1
+VERSION=$(<../semver/version)
+IMAGE=${IMAGENAME}:${VERSION}
+REMOTEREGISTRY=docker.io/bamapps
 
 if [[ $# -eq 2 ]]; then
     REMOTEREGISTRY=$2
 fi
 
-printf "Tagging docker image => 'docker tag ${IMAGE} ${REMOTEREGISTRY}'"
-docker tag ${IMAGE} ${REMOTEREGISTRY}
-printf "Pushing docker image => 'docker push ${REMOTEREGISTRY}'"
-docker push ${REMOTEREGISTRY}
+REMOTEIMAGE=${REMOTEREGISTRY}/${IMAGE}
+
+printf "Tagging docker image => 'docker tag ${IMAGENAME} ${REMOTEIMAGE}'\r\n"
+docker tag ${IMAGENAME} ${REMOTEIMAGE}
+printf "Pushing docker image => 'docker push ${REMOTEIMAGE}'\r\n"
+docker push ${REMOTEIMAGE}

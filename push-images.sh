@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#!/bin/bash
+
 if [[ $1 = "-help" ]] || [[ $1 = "-?" ]] || [[ $1 = "-h" ]]; then
     printf "usage: build-images.sh\r\n"
     printf "\r\n"
@@ -13,8 +15,8 @@ cd docker
 for DOCKERFILE in *.Dockerfile
 do
   IMAGENAME="${DOCKERFILE%.*}"
-  printf "Building ${IMAGENAME} => './build.sh ${IMAGENAME} ${DOCKERFILE}'\r\n"
-  ./build.sh ${IMAGENAME} ${DOCKERFILE}
+  printf "Pushing ${IMAGENAME} => ./push.sh ${IMAGENAME}\r\n"
+  ./push.sh ${IMAGENAME}
 done
 
 cd ..
