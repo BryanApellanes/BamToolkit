@@ -26,7 +26,8 @@ ENV BAMTOOLKITBIN=/root/.bam/toolkit/bin
 ENV BAMTOOLKITSYMLINKS=/usr/local/bin
 RUN ./build-toolkit.sh \
     && ./install-toolkit.sh \
-    && ./symlink-toolkit.sh /usr/local/bin /root/.bam/toolkit/bin
+    && ./symlink-toolkit.sh /usr/local/bin /root/.bam/toolkit/bin \
+    && ./build-nuget-lib.sh
 
 WORKDIR /root 
 
