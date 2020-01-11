@@ -13,4 +13,4 @@ steps:
 - task: ShellScript@2
   inputs: 
     scriptPath: './build-image.sh'
-    args: bamweb-runtime
+    args: bamtoolkit-sdk-tests
