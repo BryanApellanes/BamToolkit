@@ -1,7 +1,9 @@
 #!/bin/bash
 
-export DOCKER_USER=`head -1 ./creds/dockerhub | tail -1`
-export DOCKER_PASSWORD=`head -2 ./creds/dockerhub | tail -1`
+IMAGEREGISTRY=dockerhub
+
+export DOCKER_USER=`head -1 ./creds/${IMAGEREGISTRY} | tail -1`
+export DOCKER_PASSWORD=`head -2 ./creds/${IMAGEREGISTRY} | tail -1`
 
 if [[ -z $DOCKER_USER ]]; then
     printf "\r\n"
@@ -17,5 +19,5 @@ if [[ -z $DOCKER_PASSWORD ]]; then
     exit 1
 fi
 
-printf "logging into docker => 'docker login ${REMOTEREGISTRY} -u $DOCKER_USER --password-stdin'\r\n"
-echo "$DOCKER_PASSWORD" | docker login ${REMOTEREGISTRY} -u $DOCKER_USER --password-stdin
+printf "logging into docker => 'docker login -u $DOCKER_USER --password-stdin'\r\n"
+echo "$DOCKER_PASSWORD" | docker login -u $DOCKER_USER --password-stdin

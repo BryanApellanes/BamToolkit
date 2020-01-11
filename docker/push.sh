@@ -22,6 +22,7 @@ if [[ $# -eq 2 ]]; then
     fi
 fi
 
+./login.sh
 REMOTEIMAGE=${REMOTEREGISTRY}/${IMAGE}
 
 printf "Tagging docker image => 'docker tag ${IMAGENAME} ${REMOTEIMAGE}'\r\n"
