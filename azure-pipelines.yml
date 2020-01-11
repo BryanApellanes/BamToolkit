@@ -12,5 +12,5 @@ pool:
 steps:
 - task: ShellScript@2
   inputs: 
-    scriptPath: './build-image.sh'
-    args: bamtoolkit-sdk-tests
+    scriptPath: './build-images.sh'
+    #args: bamtoolkit-sdk-tests
