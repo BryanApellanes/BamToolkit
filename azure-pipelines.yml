@@ -12,4 +12,5 @@ pool:
 steps:
 - task: ShellScript@2
   inputs: 
-    scriptPath: './build-images.sh'
+    scriptPath: './build-image.sh'
+    args: bamweb-runtime
