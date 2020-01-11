@@ -5,8 +5,6 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends git-core curl build-essential openssl libssl-dev unzip python3 \
     && rm -rf /var/lib/apt/lists/* 
 
-RUN ln -s /usr/bin/python3 /usr/bin/python
-
 RUN mkdir -p /root/.bam/src
 
 WORKDIR /root 
