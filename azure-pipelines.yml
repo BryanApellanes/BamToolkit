@@ -10,5 +10,6 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: build-images.sh
-  displayName: 'build docker images'
+- task: ShellScript@2
+  inputs: 
+    scriptPath: './build-images.sh'
