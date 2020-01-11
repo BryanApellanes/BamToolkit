@@ -10,6 +10,7 @@ if [[ -z $1 ]] || [[ $1 = "-help" ]] || [[ $1 = "-?" ]] || [[ $1 = "-h" ]]; then
 fi
 
 cd docker
+./login.sh
 
 IMAGENAME=$1
 DOCKERFILE=${IMAGENAME}.Dockerfile
