@@ -1,0 +1,16 @@
+name: Build BamToolkit SDK Docker Image W/ Tests
+
+on: 
+  push:
+    branches:
+      - ci-test
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: build bamtoolkit test docker image
+      run: ./build-image.sh bamtoolkit-sdk-tests
