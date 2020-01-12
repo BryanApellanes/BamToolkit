@@ -15,9 +15,14 @@ IMAGE=${IMAGENAME}:${VERSION}
 REMOTEREGISTRY=docker.io/bamapps
 
 if [[ $# -eq 2 ]]; then
-    REMOTEREGISTRY=$2
+    if [[ $2 = "latest" ]]; then
+        IMAGE=${IMAGENAME}:latest
+    else
+        REMOTEREGISTRY=$2
+    fi
 fi
 
+./login.sh
 REMOTEIMAGE=${REMOTEREGISTRY}/${IMAGE}
 
 printf "Tagging docker image => 'docker tag ${IMAGENAME} ${REMOTEIMAGE}'\r\n"

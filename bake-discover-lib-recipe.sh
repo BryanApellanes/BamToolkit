@@ -9,8 +9,8 @@ then
     printf "Builds a temporary copy of 'bake' and uses it to discover tools in the specified Bam.Net.Core root.\r\n"
     printf "'bake' looks for *.csproj files in the child directories of the _tools directory in the specified root.\r\n"
     printf "\r\n"
-
-else
+    exit 0
+fi
 
 source ./set-src-root.sh
 source ./get-os-runtime.sh
@@ -21,5 +21,3 @@ rm -fr ~/.bam/tmp/bake
 dotnet publish $SRCROOT/_tools/bake/bake.csproj -c Release -r $RUNTIME -o ~/.bam/tmp/bake
 
 ~/.bam/tmp/bake/bake /discover:$SRCROOT/_lib/ /output:/tmp/bam/fx /outputRecipe:$OUTPUTRECIPES$RUNTIME-bamfx-lib.json
-
-fi

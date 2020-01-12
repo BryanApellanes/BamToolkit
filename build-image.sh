@@ -1,0 +1,23 @@
+#!/bin/bash
+
+if [[ -z $1 ]] || [[ $1 = "-help" ]] || [[ $1 = "-?" ]] || [[ $1 = "-h" ]]; then
+    printf "usage: build-images.sh\r\n"
+    printf "\r\n"
+    printf "Build docker images for all the docker files found in the docker folder (./docker/*.Dockerfile).\r\n"
+    printf "Every image is pushed to docker hub.\r\n"
+    printf "\r\n"
+    exit 0
+fi
+
+cd docker
+
+IMAGENAME=$1
+DOCKERFILE=${IMAGENAME}.Dockerfile
+
+printf "Building ${IMAGENAME} => './build.sh ${IMAGENAME} ${DOCKERFILE}'\r\n"
+./build.sh ${IMAGENAME} ${DOCKERFILE}
+printf "Pushing ${IMAGENAME} => ./push.sh ${IMAGENAME}\r\n"
+./push.sh ${IMAGENAME}
+./push.sh ${IMAGENAME} latest
+
+cd ..
