@@ -1,4 +1,4 @@
-name: Build BamToolkit
+name: Build BamToolkit SDK Docker Image W/ Tests
 
 on: 
   push:
