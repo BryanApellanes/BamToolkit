@@ -9,6 +9,7 @@ if [[ $1 = "-help" ]] || [[ $1 = "-?" ]] || [[ $1 = "-h" ]]; then
     exit 0
 fi
 
+COMMIT=$(git log --format="%H" -n 1 | cut -c 1-6) 
 cd docker
 
 for DOCKERFILE in *.Dockerfile
@@ -19,6 +20,7 @@ do
   printf "Pushing ${IMAGENAME} => ./push.sh ${IMAGENAME}\r\n"
   ./push.sh ${IMAGENAME}
   ./push.sh ${IMAGENAME} latest
+  ./push.sh ${IMAGENAME} $COMMIT
 done
 
 cd ..

@@ -18,7 +18,7 @@ if [[ $# -eq 2 ]]; then
     if [[ $2 = "latest" ]]; then
         IMAGE=${IMAGENAME}:latest
     else
-        REMOTEREGISTRY=$2
+        IMAGE=${IMAGENAME}:$2
     fi
 fi
 
