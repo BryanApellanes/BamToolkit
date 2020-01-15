@@ -20,10 +20,4 @@ fi
 
 printf "SSH_PUBLIC_KEY = ${SSH_PUBLIC_KEY}"
 
-mkdir -p ~/.ssh
-cp -R ./docker/_ssh/ ~/.ssh 
-chmod 700 ~/.ssh
-chmod 644 ~/.ssh/id_rsa.pub
-chmod 600 ~/.ssh/id_rsa
-
 git push "git@github.com:BryanApellanes/BamToolkit.git" HEAD:ci-test -f
