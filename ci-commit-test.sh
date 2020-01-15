@@ -18,6 +18,7 @@ if [[ -z SSH_PUBLIC_KEY ]]; then
     exit 1;
 fi
 
+mkdir -p ~/.ssh
 echo $SSH_PRIVATE_KEY > ~/.ssh/id_rsa
 echo $SSH_PUBLIC_KEY > ~/.ssh/id_rsa.pub
 
