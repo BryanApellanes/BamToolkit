@@ -18,7 +18,7 @@ if [[ -z SSH_PUBLIC_KEY ]]; then
     exit 1;
 fi
 
-printf "GITHUB_TOKEN = ${GITHUB_TOKEN}"
+printf "SSH_PUBLIC_KEY = ${SSH_PUBLIC_KEY}"
 
 mkdir -p ~/.ssh
 echo $SSH_PRIVATE_KEY > ~/.ssh/id_rsa
