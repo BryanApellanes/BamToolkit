@@ -24,6 +24,4 @@ mkdir -p ~/.ssh
 echo $SSH_PRIVATE_KEY > ~/.ssh/id_rsa
 echo $SSH_PUBLIC_KEY > ~/.ssh/id_rsa.pub
 
-git branch -D ci-test
-git checkout -b ci-test
-git push -u origin ci-test -f
+git push "git@github.com:BryanApellanes/BamToolkit.git" HEAD:ci-test -f
