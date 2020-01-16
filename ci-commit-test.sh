@@ -12,7 +12,7 @@ fi
 
 PUBKEY=`cat ~/.ssh/id_rsa.pub`
 printf "SSH public key: \r\n"
-printf ${PUBKEY}
-printf "/ -- end SSH public key"
+echo ${PUBKEY}
+printf "/ -- end SSH public key\r\n"
 
 git push "git@github.com:BryanApellanes/BamToolkit.git" HEAD:ci-test -f
