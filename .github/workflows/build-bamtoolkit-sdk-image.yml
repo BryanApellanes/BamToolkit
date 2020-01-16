@@ -14,11 +14,6 @@ jobs:
       DIST: /tmp/bam
     steps:
     - uses: actions/checkout@v1
-    - uses: actions/setup-dotnet@v1
-      with:
-          dotnet-version: '2.2.402'
-    - name: set ssh keys
-      run: ./set-keys.sh
     - name: build docker image
       run: ./build-image.sh bamtoolkit-sdk
     - name: commit 'ci-test' branch
