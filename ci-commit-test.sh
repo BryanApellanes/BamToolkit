@@ -8,16 +8,6 @@ if [[ $1 = "-help" ]] || [[ $1 = "-?" ]] || [[ $1 = "-h" ]]; then
     exit 0
 fi
 
-if [[ -z $SSH_PRIVATE_KEY ]]; then
-    printf "SSH_PRIVATE_KEY environment variable not set.\r\n"
-    exit 1;
-fi
-
-if [[ -z $SSH_PUBLIC_KEY ]]; then 
-    printf "SSH_PUBLIC_KEY environment variable not set.\r\n"
-    exit 1;
-fi
-
 printf "SSH_PUBLIC_KEY = ${SSH_PUBLIC_KEY}"
 
 git push "git@github.com:BryanApellanes/BamToolkit.git" HEAD:ci-test -f

@@ -19,8 +19,6 @@ jobs:
           dotnet-version: '2.2.402'
     - name: set ssh keys
       run: ./set-keys.sh
-    - name: install toolkit
-      run: source ./setup.sh
     - name: build docker image
       run: ./build-image.sh bamtoolkit-sdk
     - name: commit 'ci-test' branch
