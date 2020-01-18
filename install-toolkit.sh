@@ -13,7 +13,7 @@ if [[ $1 = "-help" ]] || [[ $1 = "-?" ]] || [[ $1 = "-h" ]] || [[ $2 = "-help" ]
 fi
 
 if [[ -z "$DIST" ]]; then
-    DIST=./dist
+    DIST=/tmp/bam
 fi
 
 BAMTOOLKITBIN=$1
