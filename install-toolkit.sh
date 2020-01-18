@@ -28,6 +28,10 @@ if [[ -z "$1" ]]; then
     rm -fr ${BAMTOOLKITBIN}
 fi
 
+if [[ -z $BAMTOOLKITSYMLINKS ]]; then
+    BAMTOOLKITSYMLINKS=~/.bam/toolkit
+fi
+
 source ./get-os-runtime.sh 
 
 if [[ ! -f ${DIST}/${RUNTIME}-bamtoolkit.zip  ]]; then 
@@ -36,7 +40,7 @@ if [[ ! -f ${DIST}/${RUNTIME}-bamtoolkit.zip  ]]; then
 else
     mkdir -p ${BAMTOOLKITBIN}
     unzip $DIST/$RUNTIME-bamtoolkit.zip -d ${BAMTOOLKITBIN}
-    source ./set-toolkit-path.sh ${BAMTOOLKITBIN}
+    source ./set-toolkit-path.sh ${BAMTOOLKITSYMLINKS}
 fi
 
 export BAMTOOLKITBIN

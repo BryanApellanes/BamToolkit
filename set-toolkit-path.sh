@@ -20,6 +20,7 @@ else
     printf "updating the PATH\r\n\r\n"
     HOME=~
 
-    [[ ":$PATH:" != *":${HOME}/.bam/toolkit/bin:"* ]] && export PATH="${HOME}/.bam/toolkit/bin:${PATH}"
+    [[ ":$PATH:" != *":${HOME}/.bam/toolkit:"* ]] && export PATH="${HOME}/.bam/toolkit:${PATH}"
 
+    printf "PATH = ${PATH}\r\n\r\n"
 fi

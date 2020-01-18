@@ -25,6 +25,7 @@ if [[ -z $BAMTOOLKITBIN ]]; then
     exit 1
 fi
 
+printf "BAMTOOKITSYMLINKS will go ${BAMTOOLKITSYMLINKS}\r\n"
 curdir=`pwd`
 cd ${BAMTOOLKITBIN}
 for TOOLNAME in $(ls -d */ | sed 's#/##')
@@ -32,11 +33,12 @@ do
     printf "Setting permission mode to 755 for ${BAMTOOLKITBIN}/${TOOLNAME}/${TOOLNAME}\r\n"
     chmod 755 ${BAMTOOLKITBIN}/${TOOLNAME}/${TOOLNAME}
     printf "Adding symlink ${BAMTOOLKITSYMLINKS}/${TOOLNAME} => ${BAMTOOLKITBIN}/${TOOLNAME}\r\n"  
-    if [[ -f ${BAMTOOLKITSYMLINKS}/${TOOLNAME} ]]; then
+    if [[ -L ${BAMTOOLKITSYMLINKS}/${TOOLNAME} ]]; then
         printf "Removing existing link ${BAMTOOLKITSYMLINKS}/${TOOLNAME}"
         rm ${BAMTOOLKITSYMLINKS}/${TOOLNAME}
     fi
     ln -s ${BAMTOOLKITBIN}/${TOOLNAME}/${TOOLNAME} ${BAMTOOLKITSYMLINKS}/${TOOLNAME}    
+    printf "\r\n"
 done
 cd $curdir
 
