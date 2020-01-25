@@ -3,7 +3,7 @@ name: Build BamToolkit SDK Test Docker Image
 on: 
   push:
     branches:
-      - ci-test
+      - bamtoolkit-test
 
 jobs:
   build:

@@ -14,8 +14,8 @@ fi
 source ./set-src-root.sh
 source ./get-os-runtime.sh
 
-echo building bake from $SRCROOT
-./build-bake.sh $SRCROOT
+echo building bake from $BAMSRCROOT
+./build-bake.sh $BAMSRCROOT
 
 echo "baking nuget package(s) for `pwd`/recipes/$RUNTIME-bamfx-lib.json"
 ~/.bam/bake/bake /nuget:./recipes/$RUNTIME-bamfx-lib.json

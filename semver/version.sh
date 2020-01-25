@@ -56,11 +56,11 @@ if [[ $1 = "patch" || $1 = "hotfix" || $2 = "patch" || $2 = "hotfix" ]]; then
 fi
 
 if [[ $1 = "dev" || $2 = "dev" ]]; then
-    NEWVERSION=${MAJOR}.${MINOR}.${PATCH}-${COMMIT}
+    NEWVERSION=${MAJOR}.${MINOR}.${PATCH}-dev+${COMMIT}
 fi
 
 if [[ $1 = "test" || $2 = "test" ]]; then
-    NEWVERSION=${MAJOR}.${MINOR}.${PATCH}-test
+    NEWVERSION=${MAJOR}.${MINOR}.${PATCH}-test+${COMMIT}
 fi
 
 if [[ $1 = "pre-release" || $1 = "staging" || $2 = "staging" || $2 = "pre-release" ]]; then    
