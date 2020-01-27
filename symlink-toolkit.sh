@@ -31,12 +31,12 @@ cd ${BAMTOOLKITBIN}
 for TOOLNAME in $(ls -d */ | sed 's#/##')
 do
     printf "Setting permission mode to 755 for ${BAMTOOLKITBIN}/${TOOLNAME}/${TOOLNAME}\r\n"
-    chmod 755 ${BAMTOOLKITBIN}/${TOOLNAME}/${TOOLNAME}
-    printf "Adding symlink ${BAMTOOLKITSYMLINKS}/${TOOLNAME} => ${BAMTOOLKITBIN}/${TOOLNAME}\r\n"  
+    chmod 755 ${BAMTOOLKITBIN}/${TOOLNAME}/${TOOLNAME}    
     if [[ -L ${BAMTOOLKITSYMLINKS}/${TOOLNAME} ]]; then
         printf "Removing existing link ${BAMTOOLKITSYMLINKS}/${TOOLNAME}"
         rm ${BAMTOOLKITSYMLINKS}/${TOOLNAME}
     fi
+    printf "Adding symlink ${BAMTOOLKITSYMLINKS}/${TOOLNAME} => ${BAMTOOLKITBIN}/${TOOLNAME}\r\n"  
     ln -s ${BAMTOOLKITBIN}/${TOOLNAME}/${TOOLNAME} ${BAMTOOLKITSYMLINKS}/${TOOLNAME}    
     printf "\r\n"
 done
