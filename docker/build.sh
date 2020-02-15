@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ -z "$1" ]] || [[ $1 = "-help" ]] || [[ $1 = "-?" ]] || [[ $1 = "-h" ]]; then
-    printf "usage: build.sh <image-tag> <Dockerfile>\r\n"
+    printf "usage: build.sh <image-tag> [Dockerfile]\r\n"
     printf "\r\n"
     printf "Creates an image using the specified tag/name and specified dockerfile.\r\n"
     printf "If no docker file is specified the file {image-tag}.Dockerfile is used if\r\n"
