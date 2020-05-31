@@ -18,6 +18,6 @@ source ./get-os-runtime.sh
 OUTPUTRECIPES=./recipes/
 
 rm -fr ~/.bam/tmp/bake
-dotnet publish ${SRCROOT}/_tools/bake/bake.csproj -c Release -r ${RUNTIME} -o ~/.bam/tmp/bake
+dotnet publish ${BAMSRCROOT}/_tools/bake/bake.csproj -c Release -r ${RUNTIME} -o ~/.bam/tmp/bake
 
-~/.bam/tmp/bake/bake /discover:${SRCROOT}/_tools/ /output:/tmp/bam/bin /outputRecipe:${OUTPUTRECIPES}${RUNTIME}-bamtoolkit.json
+~/.bam/tmp/bake/bake /discover:${BAMSRCROOT}/_tools/ /output:/tmp/bam/bin /outputRecipe:${OUTPUTRECIPES}${RUNTIME}-bamtoolkit.json

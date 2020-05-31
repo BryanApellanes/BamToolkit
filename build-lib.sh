@@ -13,9 +13,9 @@ if [[ $1 = "-help" ]] || [[ $1 = "-?" ]] || [[ $1 = "-h" ]]; then
 fi
 
 if [ -z "$1" ]; then 
-  BAMNETVERSION=bam-net-core
+  BAMNETBRANCH=bam-net-core
 else
-  BAMNETVERSION=$1
+  BAMNETBRANCH=$1
 fi
 
 source ./set-src-root.sh

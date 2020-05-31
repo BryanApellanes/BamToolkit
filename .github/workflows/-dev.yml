@@ -1,0 +1,18 @@
+name: Build BamToolkit SDK Docker Image and Trigger Tests
+
+on: 
+  push:
+    branches:
+      - bamtoolkit-dev
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    env:
+      DIST: /tmp/bam
+    steps:
+    - uses: actions/checkout@v1
+    - name: checkout bam-net-core-dev branch
+      run: ./checkout.sh bam-net-core-dev

@@ -1,4 +1,4 @@
-# Build
+# Build bamweb sdk docker image
 FROM microsoft/dotnet:sdk AS build-env
 
 RUN apt-get update \

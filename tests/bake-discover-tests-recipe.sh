@@ -14,11 +14,11 @@ cd ..
 source ./get-os-runtime.sh
 cd tests
 
-SRCROOT=../Bam.Net.Core
+BAMSRCROOT=../Bam.Net.Core
 OUTPUTRECIPES=../recipes/
 
 rm -fr ~/.bam/tmp/bake
-echo "building => dotnet publish ${SRCROOT}/_tools/bake/bake.csproj -c Release -r ${RUNTIME} -o ~/.bam/tmp/bake"
-dotnet publish ${SRCROOT}/_tools/bake/bake.csproj -c Release -r ${RUNTIME} -o ~/.bam/tmp/bake
+echo "building => dotnet publish ${BAMSRCROOT}/_tools/bake/bake.csproj -c Release -r ${RUNTIME} -o ~/.bam/tmp/bake"
+dotnet publish ${BAMSRCROOT}/_tools/bake/bake.csproj -c Release -r ${RUNTIME} -o ~/.bam/tmp/bake
 
-~/.bam/tmp/bake/bake /discover:${SRCROOT}/_tests/core/ /output:/tmp/bam/tests /outputRecipe:${OUTPUTRECIPES}${RUNTIME}-bamtoolkit-tests.json
+~/.bam/tmp/bake/bake /discover:${BAMSRCROOT}/_tests/core/ /output:/tmp/bam/tests /outputRecipe:${OUTPUTRECIPES}${RUNTIME}-bamtoolkit-tests.json

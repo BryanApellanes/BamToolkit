@@ -10,11 +10,17 @@ if [[ $1 = "-help" ]] || [[ $1 = "-?" ]] || [[ $1 = "-h" ]]; then
     exit 0
 fi
 
+if [ -z "$1" ]; then 
+  BAMNETBRANCH=bam-net-core
+else
+  BAMNETBRANCH=$1
+fi
+
 source ./set-src-root.sh 
 
-echo ***** ${BAMNETVERSION}
-echo getting ${BAMNETVERSION} branch of Bam.Net.Core repo
-cd $SRCROOT
+echo ***** ${BAMNETBRANCH}
+echo getting ${BAMNETBRANCH} branch of Bam.Net.Core repo
+cd $BAMSRCROOT
 git fetch --all
-git checkout -f ${BAMNETVERSION}
+git checkout -f ${BAMNETBRANCH}
 git submodule update --init --recursive

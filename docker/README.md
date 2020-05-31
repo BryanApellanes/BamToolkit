@@ -4,3 +4,5 @@ This folder contains scripts used to build docker images for Bam related tools. 
 image build process (Dockerfile) invoked by scripts.
 
 # Quick Start
+
+- build.sh bamtoolkit
