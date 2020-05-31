@@ -1,3 +1,5 @@
+# THIS REPO IS DEPRECATED IN FAVOR OF THE SCRIPTS LOCATED IN THE "build" REPO WHICH IS SUBMODULED TO "Bam.Net.Core/.bam/build"
+
 # BamToolkit
 
 This repository contains scripts to build and install the BamToolkit.

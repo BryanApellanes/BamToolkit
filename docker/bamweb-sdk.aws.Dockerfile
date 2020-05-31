@@ -1,4 +1,4 @@
-# Build
+# Build bamweb sdk docker image with aws command line tools
 FROM microsoft/dotnet:sdk AS build-env
 
 RUN apt-get update \
