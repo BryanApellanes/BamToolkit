@@ -1,0 +1,6 @@
+Add all "tools" here as submodules
+
+For each tool
+- add Bam.Core as a submodule
+- reference the nuget package in the master/main branch
+- create a dev branch that references the submodule
