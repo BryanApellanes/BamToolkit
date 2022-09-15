@@ -1,23 +1,14 @@
-# THIS REPO IS DEPRECATED IN FAVOR OF THE SCRIPTS LOCATED IN THE "build" REPO WHICH IS SUBMODULED TO "Bam.Net.Core/.bam/build"
+# BamToolkit v2
 
-# BamToolkit
+This repository repesents the tools that compose the Bam Toolkit.  Each Bam tool is included as a submodule.
 
-This repository contains scripts to build and install the BamToolkit.
+The individual tools included with the Bam Toolkit are as follows:
 
-TL;DR
-```
-source setup.sh
-```
-
-## Quick Start
-
-Source the `setup.sh` by calling `source setup.sh`.  This will do the following:
-
-    - Get the latest toolkit source
-    - Build the toolkit from source
-    - Install the resulting binaries into ~/.bam/toolkit/bin
-    - Update the system path to include the ~/.bam/toolkit/bin.
-
-## Docker
-
-To build docker images see [BamToolkit/Docker](./docker).
+- bamheart - the core of a Bam Application installation.  Provides all core functionality.  Manages the following tools.
+  - bamd - manages sub-processes, included as separate application level utilities, that an application may be dependent on.
+  - bambot - a remote command execution agent.
+  - bamdns - a Bam Application specific DNS server.
+  - bamfs - a Bam Application distributed file system manager.
+- bamdb - provides an ORM, RDBMS functionality and No-SQL functionality over a REST based data access API.
+- bamweb - provides templated HTML UI.
+- bamapi - provides an RPC based API exposed as HTTP(S) endpoints.
