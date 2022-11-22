@@ -7,9 +7,6 @@
 [submodule "submodules/bamapi"]
 	path = submodules/bamapi
 	url = https://github.com/BryanApellanes/bamapi.git
-[submodule "submodules/bamski"]
-	path = submodules/bamski
-	url = https://github.com/BryanApellanes/bamski.git
 [submodule "submodules/bamux"]
 	path = submodules/bamux
 	url = https://github.com/BryanApellanes/bamux.git
