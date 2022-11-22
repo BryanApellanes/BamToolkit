@@ -10,3 +10,9 @@
 [submodule "submodules/bamski"]
 	path = submodules/bamski
 	url = https://github.com/BryanApellanes/bamski.git
+[submodule "submodules/bamux"]
+	path = submodules/bamux
+	url = https://github.com/BryanApellanes/bamux.git
+[submodule "submodules/bamcli"]
+	path = submodules/bamcli
+	url = https://github.com/BryanApellanes/bamcli.git
