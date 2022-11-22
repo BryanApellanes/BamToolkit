@@ -13,3 +13,6 @@
 [submodule "submodules/bamcli"]
 	path = submodules/bamcli
 	url = https://github.com/BryanApellanes/bamcli.git
+[submodule "submodules/bam.core"]
+	path = submodules/bam.core
+	url = https://github.com/BryanApellanes/Bam.Core.git
