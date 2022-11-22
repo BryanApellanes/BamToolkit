@@ -1,0 +1,9 @@
+[submodule "submodules/bamheart"]
+	path = submodules/bamheart
+	url = https://github.com/BryanApellanes/bamheart.git
+[submodule "submodules/bamio"]
+	path = submodules/bamio
+	url = https://github.com/BryanApellanes/bamio.git
+[submodule "submodules/bamapi"]
+	path = submodules/bamapi
+	url = https://github.com/BryanApellanes/bamapi.git
