@@ -1,0 +1,97 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "submodules", "submodules", "{91FCA921-D984-4AA8-9427-734E99B7D2D5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bamheart", "submodules\bamheart\bamheart.csproj", "{B796DBBC-C3C0-43D2-95ED-D892462BA9D9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bambot", "submodules\bamheart\submodules\bambot\bambot.csproj", "{FDBF1B2A-CDE5-4FF6-AF5D-CDD55721C76A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bamd", "submodules\bamheart\submodules\bamd\bamd.csproj", "{FE8C6952-065D-4B7E-A645-08186E988174}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bam.remote", "submodules\bamheart\submodules\bambot\submodules\bam.remote\bam.remote.csproj", "{AA593FA6-56A9-455B-BBD4-9AF3EE24BA30}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bamfs", "submodules\bamheart\submodules\bamfs\bamfs.csproj", "{1C3863B0-F42B-42F9-9284-FA24C76E774A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "heart", "heart", "{E7FE742F-C2D9-4F26-90C5-E2911CB857CE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bam.core", "submodules\bam.core\bam.core\bam.core.csproj", "{645D06E9-6023-4EAA-ABBE-46EFA9117FF6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{B9A5C0A7-57AE-4F29-B081-CDC0375929CD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bamapi", "submodules\bamapi\bamapi\bamapi.csproj", "{C43777F6-4556-4E47-9472-4F963038140E}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "bam.net.shared", "submodules\bam.core\submodules\bam.net.shared\bam.net.shared.shproj", "{8F2CB78E-8C2E-45C6-97A0-C38F60A85E98}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cli", "cli", "{1D42BA94-6B24-4F6C-ADC8-7BE147873BFE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bam", "submodules\bamcli\bam\bam.csproj", "{64D7AAEC-D052-4E83-87F9-8C405CA8129F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bam.net.data.dynamic", "submodules\bam.net.data.dynamic\bam.net.data.dynamic.csproj", "{02A88035-1E7D-4217-A9B3-3A7E471D5824}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B796DBBC-C3C0-43D2-95ED-D892462BA9D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B796DBBC-C3C0-43D2-95ED-D892462BA9D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B796DBBC-C3C0-43D2-95ED-D892462BA9D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B796DBBC-C3C0-43D2-95ED-D892462BA9D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDBF1B2A-CDE5-4FF6-AF5D-CDD55721C76A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDBF1B2A-CDE5-4FF6-AF5D-CDD55721C76A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDBF1B2A-CDE5-4FF6-AF5D-CDD55721C76A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDBF1B2A-CDE5-4FF6-AF5D-CDD55721C76A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE8C6952-065D-4B7E-A645-08186E988174}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE8C6952-065D-4B7E-A645-08186E988174}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE8C6952-065D-4B7E-A645-08186E988174}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE8C6952-065D-4B7E-A645-08186E988174}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA593FA6-56A9-455B-BBD4-9AF3EE24BA30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA593FA6-56A9-455B-BBD4-9AF3EE24BA30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA593FA6-56A9-455B-BBD4-9AF3EE24BA30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA593FA6-56A9-455B-BBD4-9AF3EE24BA30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C3863B0-F42B-42F9-9284-FA24C76E774A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C3863B0-F42B-42F9-9284-FA24C76E774A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C3863B0-F42B-42F9-9284-FA24C76E774A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C3863B0-F42B-42F9-9284-FA24C76E774A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{645D06E9-6023-4EAA-ABBE-46EFA9117FF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{645D06E9-6023-4EAA-ABBE-46EFA9117FF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{645D06E9-6023-4EAA-ABBE-46EFA9117FF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{645D06E9-6023-4EAA-ABBE-46EFA9117FF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C43777F6-4556-4E47-9472-4F963038140E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C43777F6-4556-4E47-9472-4F963038140E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C43777F6-4556-4E47-9472-4F963038140E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C43777F6-4556-4E47-9472-4F963038140E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64D7AAEC-D052-4E83-87F9-8C405CA8129F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64D7AAEC-D052-4E83-87F9-8C405CA8129F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64D7AAEC-D052-4E83-87F9-8C405CA8129F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64D7AAEC-D052-4E83-87F9-8C405CA8129F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02A88035-1E7D-4217-A9B3-3A7E471D5824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02A88035-1E7D-4217-A9B3-3A7E471D5824}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02A88035-1E7D-4217-A9B3-3A7E471D5824}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02A88035-1E7D-4217-A9B3-3A7E471D5824}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{91FCA921-D984-4AA8-9427-734E99B7D2D5} = {E7FE742F-C2D9-4F26-90C5-E2911CB857CE}
+		{B796DBBC-C3C0-43D2-95ED-D892462BA9D9} = {E7FE742F-C2D9-4F26-90C5-E2911CB857CE}
+		{FDBF1B2A-CDE5-4FF6-AF5D-CDD55721C76A} = {91FCA921-D984-4AA8-9427-734E99B7D2D5}
+		{FE8C6952-065D-4B7E-A645-08186E988174} = {91FCA921-D984-4AA8-9427-734E99B7D2D5}
+		{AA593FA6-56A9-455B-BBD4-9AF3EE24BA30} = {91FCA921-D984-4AA8-9427-734E99B7D2D5}
+		{1C3863B0-F42B-42F9-9284-FA24C76E774A} = {91FCA921-D984-4AA8-9427-734E99B7D2D5}
+		{C43777F6-4556-4E47-9472-4F963038140E} = {B9A5C0A7-57AE-4F29-B081-CDC0375929CD}
+		{64D7AAEC-D052-4E83-87F9-8C405CA8129F} = {1D42BA94-6B24-4F6C-ADC8-7BE147873BFE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E284EF8-5578-4C15-BF4C-1BF32C1C219D}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		submodules\bam.core\submodules\bam.net.shared\bam.net.shared.projitems*{645d06e9-6023-4eaa-abbe-46efa9117ff6}*SharedItemsImports = 5
+		submodules\bam.core\submodules\bam.net.shared\bam.net.shared.projitems*{8f2cb78e-8c2e-45c6-97a0-c38f60a85e98}*SharedItemsImports = 13
+	EndGlobalSection
+EndGlobal
