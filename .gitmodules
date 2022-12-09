@@ -22,3 +22,6 @@
 [submodule "submodules/bam.net.data.graphql"]
 	path = submodules/bam.net.data.graphql
 	url = https://github.com/BryanApellanes/Bam.Net.Data.GraphQL.git
+[submodule "submodules/bamd"]
+	path = submodules/bamd
+	url = https://github.com/BryanApellanes/bamd.git
