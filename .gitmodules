@@ -31,3 +31,6 @@
 [submodule "submodules/bamfs"]
 	path = submodules/bamfs
 	url = https://github.com/BryanApellanes/bamfs.git
+[submodule "submodules/bamski"]
+	path = submodules/bamski
+	url = https://github.com/BryanApellanes/bamski.git
