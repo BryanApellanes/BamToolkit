@@ -5,11 +5,11 @@ This repository repesents the tools that compose the Bam Toolkit.  Each Bam tool
 The individual tools included with the Bam Toolkit are as follows:
 
 - bamheart - the core of a Bam Application installation.  Provides all core functionality.  Manages the following tools:
-  - bamd - manages sub-processes, included as separate application level utilities, that an application may be dependent on.
-  - bambot - remote command execution agent.
-  - bamfs - Bam Application distributed file system manager.
-  - bamski - Bam Application social key infrastructure. 
+- bambot - remote command execution agent. 
+- bamd - manages sub-processes, included as separate application level utilities, that an application may be dependent on.
 - bamio - provides data input and output services including an ORM, RDBMS wrapper to common databases and No-SQL functionality over a REST based data access API.
+- bamfs - Bam Application distributed file system manager.
+- bamski - Bam Application social key infrastructure. 
 - bamux - provides templated HTML UI and other user experience elements.
 - bamapi - provides an RPC based API exposed as HTTP(S) endpoints.
 - bamcli - a CLI to manage all tools above.
