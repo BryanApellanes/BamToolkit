@@ -29,9 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bamheart", "submodules\bamh
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bam.core", "submodules\bamheart\submodules\bam.core\bam.core\bam.core.csproj", "{61A86AE9-5191-4D90-99F0-D8CBFC74141F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bamd", "bamd", "{7C909354-F24E-4D32-B28D-7CCB05B7A243}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "d", "d", "{7C909354-F24E-4D32-B28D-7CCB05B7A243}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bamd", "submodules\bamd\bamd.csproj", "{AE06F466-D87A-423A-BA98-B951F3196213}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bamd", "submodules\bamd\bamd\bamd.csproj", "{AE06F466-D87A-423A-BA98-B951F3196213}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "submodules", "submodules", "{9DC29443-9D38-4F3F-856E-3CC3061B184C}"
 EndProject
@@ -45,7 +45,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "bam.net.shared", "submodule
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bam", "submodules\bamcli\bam\bam.csproj", "{3F6DD95F-BDC3-4A42-A5CB-A132F2A4A63A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bambot", "bambot", "{45C33472-6871-4847-9B4E-E0F2CD2ECE12}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bot", "bot", "{45C33472-6871-4847-9B4E-E0F2CD2ECE12}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bambot", "submodules\bambot\bambot\bambot.csproj", "{AC898BB7-DEC0-4895-9FCC-4CBF68BD42AF}"
 EndProject
@@ -57,7 +57,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "bam.net.shared", "submodule
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bam.remote", "submodules\bambot\submodules\bam.remote\bam.remote.csproj", "{2ACD5CB1-BF96-4C94-85CD-C9E64D191251}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bamfs", "bamfs", "{56E76957-548C-460F-A229-C9088057AD78}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "fs", "fs", "{56E76957-548C-460F-A229-C9088057AD78}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "submodules", "submodules", "{D0A4821F-5328-456E-8356-FD0F2B8C8EDA}"
 EndProject
@@ -67,7 +67,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "bam.net.shared", "submodule
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bamfs", "submodules\bamfs\bamfs\bamfs.csproj", "{4689716C-BA08-4755-A7F2-352583A794CC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bamski", "bamski", "{8023A8D1-096D-425A-A44A-C8F9E5B5A228}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ski", "ski", "{8023A8D1-096D-425A-A44A-C8F9E5B5A228}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bamski", "submodules\bamski\bamski\bamski.csproj", "{05F5D352-A84B-4E1A-82F7-308AD4288EB0}"
 EndProject
@@ -77,7 +77,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bam.core", "submodules\bams
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "bam.net.shared", "submodules\bamski\submodules\bam.core\submodules\bam.net.shared\bam.net.shared.shproj", "{63143873-C34B-4F8D-9A3B-54AADAC8BE4C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bamio", "bamio", "{D2DB2D35-B816-4FB9-89E9-E36752E6373A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "io", "io", "{D2DB2D35-B816-4FB9-89E9-E36752E6373A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "submodules", "submodules", "{6593FE58-7C89-44BF-A5EC-9FDD82E04CFE}"
 EndProject
