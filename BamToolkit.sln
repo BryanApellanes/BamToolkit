@@ -85,6 +85,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bam.core", "submodules\bami
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "bam.net.shared", "submodules\bamio\submodule\Bam.Core\submodules\bam.net.shared\bam.net.shared.shproj", "{A3F178BB-C218-4B47-99BA-B7DDB2E45F6D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "http", "http", "{0BAB3643-0E2F-4AC0-8AF1-0B72450C478B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bamhttp", "submodules\bamhttp\bamhttp\bamhttp.csproj", "{F2B69CC7-4DA4-44D2-BD60-BF359EDAD58F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "submodules", "submodules", "{C095A134-7AD6-47AC-A885-B5E6BFCADDC8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bam.core", "submodules\bamhttp\submodules\bam.core\bam.core\bam.core.csproj", "{4C2557A1-ECD8-4DD2-9336-E1391ED61A9C}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "bam.net.shared", "submodules\bamhttp\submodules\bam.core\submodules\bam.net.shared\bam.net.shared.shproj", "{BEACA1F5-728E-4A73-974D-F1F219E4AECA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +169,14 @@ Global
 		{CA63537F-BE0F-44C5-A078-4016031099F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA63537F-BE0F-44C5-A078-4016031099F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA63537F-BE0F-44C5-A078-4016031099F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2B69CC7-4DA4-44D2-BD60-BF359EDAD58F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2B69CC7-4DA4-44D2-BD60-BF359EDAD58F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2B69CC7-4DA4-44D2-BD60-BF359EDAD58F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2B69CC7-4DA4-44D2-BD60-BF359EDAD58F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C2557A1-ECD8-4DD2-9336-E1391ED61A9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C2557A1-ECD8-4DD2-9336-E1391ED61A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C2557A1-ECD8-4DD2-9336-E1391ED61A9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C2557A1-ECD8-4DD2-9336-E1391ED61A9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -197,6 +215,10 @@ Global
 		{6593FE58-7C89-44BF-A5EC-9FDD82E04CFE} = {D2DB2D35-B816-4FB9-89E9-E36752E6373A}
 		{CA63537F-BE0F-44C5-A078-4016031099F3} = {6593FE58-7C89-44BF-A5EC-9FDD82E04CFE}
 		{A3F178BB-C218-4B47-99BA-B7DDB2E45F6D} = {6593FE58-7C89-44BF-A5EC-9FDD82E04CFE}
+		{F2B69CC7-4DA4-44D2-BD60-BF359EDAD58F} = {0BAB3643-0E2F-4AC0-8AF1-0B72450C478B}
+		{C095A134-7AD6-47AC-A885-B5E6BFCADDC8} = {0BAB3643-0E2F-4AC0-8AF1-0B72450C478B}
+		{4C2557A1-ECD8-4DD2-9336-E1391ED61A9C} = {C095A134-7AD6-47AC-A885-B5E6BFCADDC8}
+		{BEACA1F5-728E-4A73-974D-F1F219E4AECA} = {C095A134-7AD6-47AC-A885-B5E6BFCADDC8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0E284EF8-5578-4C15-BF4C-1BF32C1C219D}
@@ -206,6 +228,7 @@ Global
 		submodules\bambot\submodules\bam.core\submodules\bam.net.shared\bam.net.shared.projitems*{0e4ea068-42fb-41ae-ac33-24a70426522e}*SharedItemsImports = 13
 		submodules\bamapi\submodule\Bam.Core\submodules\bam.net.shared\bam.net.shared.projitems*{22da9f9e-a84f-47ee-a870-3cc845812606}*SharedItemsImports = 13
 		submodules\bamcli\submodules\bam.core\submodules\bam.net.shared\bam.net.shared.projitems*{38a26214-f377-4d7a-8c61-6fa00f2c3583}*SharedItemsImports = 5
+		submodules\bamhttp\submodules\bam.core\submodules\bam.net.shared\bam.net.shared.projitems*{4c2557a1-ecd8-4dd2-9336-e1391ed61a9c}*SharedItemsImports = 5
 		submodules\bamd\submodules\bam.core\submodules\bam.net.shared\bam.net.shared.projitems*{5a92a4de-f3fd-4273-b014-742bf325ff89}*SharedItemsImports = 5
 		submodules\bamheart\submodules\bam.core\submodules\bam.net.shared\bam.net.shared.projitems*{61a86ae9-5191-4d90-99f0-d8cbfc74141f}*SharedItemsImports = 5
 		submodules\bamski\submodules\bam.core\submodules\bam.net.shared\bam.net.shared.projitems*{63143873-c34b-4f8d-9a3b-54aadac8be4c}*SharedItemsImports = 13
@@ -214,6 +237,7 @@ Global
 		submodules\bamd\submodules\bam.core\submodules\bam.net.shared\bam.net.shared.projitems*{8ce3b579-62a1-415a-a4d9-293a4aab165b}*SharedItemsImports = 13
 		submodules\bamheart\submodules\bam.core\submodules\bam.net.shared\bam.net.shared.projitems*{8f2cb78e-8c2e-45c6-97a0-c38f60a85e98}*SharedItemsImports = 13
 		submodules\bamio\submodule\Bam.Core\submodules\bam.net.shared\bam.net.shared.projitems*{a3f178bb-c218-4b47-99ba-b7ddb2e45f6d}*SharedItemsImports = 13
+		submodules\bamhttp\submodules\bam.core\submodules\bam.net.shared\bam.net.shared.projitems*{beaca1f5-728e-4a73-974d-f1f219e4aeca}*SharedItemsImports = 13
 		submodules\bamfs\submodules\bam.core\submodules\bam.net.shared\bam.net.shared.projitems*{c401c0a9-b415-4970-9442-d444d222fc4a}*SharedItemsImports = 5
 		submodules\bamio\submodule\Bam.Core\submodules\bam.net.shared\bam.net.shared.projitems*{ca63537f-be0f-44c5-a078-4016031099f3}*SharedItemsImports = 5
 		submodules\bamcli\submodules\bam.core\submodules\bam.net.shared\bam.net.shared.projitems*{d0f2d7ae-423d-415d-9c22-e4679ad179a7}*SharedItemsImports = 13
