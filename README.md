@@ -1,23 +1,5 @@
-# THIS REPO IS DEPRECATED IN FAVOR OF THE SCRIPTS LOCATED IN THE "build" REPO WHICH IS SUBMODULED TO "Bam.Net.Core/.bam/build"
-
 # BamToolkit
 
-This repository contains scripts to build and install the BamToolkit.
+The Bam Toolkit has been dormant for a number of years while the world settles into new ways of doing things, including .NET Core and distributed containerized applications.
 
-TL;DR
-```
-source setup.sh
-```
-
-## Quick Start
-
-Source the `setup.sh` by calling `source setup.sh`.  This will do the following:
-
-    - Get the latest toolkit source
-    - Build the toolkit from source
-    - Install the resulting binaries into ~/.bam/toolkit/bin
-    - Update the system path to include the ~/.bam/toolkit/bin.
-
-## Docker
-
-To build docker images see [BamToolkit/Docker](./docker).
+The old Bam Toolkit and related framework consists of code that is over 15 years old and in many cases difficult to maintain or update without significant effort.  BamToolkit v2.0 is currently under development and, when complete, will provide a modern, distributed, application development platform.
