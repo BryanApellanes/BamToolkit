@@ -37,3 +37,6 @@
 [submodule "submodules/bamhttp"]
 	path = submodules/bamhttp
 	url = git@github.com:BryanApellanes/bamhttp.git
+[submodule "submodules/bamserver"]
+	path = submodules/bamserver
+	url = git@github.com:BryanApellanes/bamserver.git
